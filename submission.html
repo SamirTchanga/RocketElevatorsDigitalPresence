@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Submission Form</title>
+        <meta charset="utf-8">
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+    </head>
+    <body class="smoothscroll enable-animation">
+
+		<!-- SLIDE TOP -->
+		<div id="slidetop">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="icon-heart"></i> WHY ROCKET ELEVATORS?</h6>
+						<p>We have the conviction that we create the most innovative and reliable products on the market. 
+							Contact us today for any questions you might have.</p>
+					</div>
+
+					<div class="col-md-4">
+						<h6><i class="icon-envelope"></i> CONTACT INFO</h6>
+						<ul class="list-unstyled">
+							<li><b>Address:</b> 4468 Wellington St Suite 204, <br /> Verdun, Québec H4G 1W5, Canada</li>
+							<li><b>Phone:</b> (418) 555-1234‎</li>
+							<li><b>Email:</b> <a href="info@codeboxx.biz">info@codeboxx.biz</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+
+			<a class="slidetop-toggle" href="#"><!-- toggle button --></a>
+
+		</div>
+		<!-- /SLIDE TOP -->
+
+
+		<!-- wrapper -->
+		<div id="wrapper">
+			<div id="header" class="navbar-toggleable-md sticky clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/_rockets/logo.png" alt="" />
+						</a>
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li><!-- HOME -->
+										<a id="home-nav" href="index.html#home">
+											HOME
+										</a>
+									</li>
+									<li ><!-- SERVICES -->
+										<a id="services-nav" href="index.html#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a id="portfolio-nav" href="index.html#portfolio">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a id="news-nav" href="index.html#news">
+											NEWS
+										</a>
+									</li>
+									<li><!-- CLIENTS -->
+										<a id="clients-nav" href="index.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									<li><!-- CONTACT -->
+										<a id="contact-nav" href="index.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+            </div>
+		    <!-- /Top Nav -->
+
+
+            <!-- PAGE HEADER -->
+            <section class="page-header">
+                <div class="container">
+
+                    <h1>SUBMISSION REQUEST</h1>
+
+                    <!-- breadcrumbs -->
+                    <!-- <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li class="active">Services</li>
+                    </ol> -->
+                    <!-- /breadcrumbs -->
+
+                </div>
+            </section>
+            <!-- /PAGE HEADER -->
+
+            <section>
+                <div class="container">
+                    <!-- FORM -->
+                    <form method="POST" action="">
+                        <select name="service" id="building-type">
+                            <option value="None">Select a Building Type</option>
+                            <option id="residential" value="residential">Residential</option>
+                            <option id="commercial" value="commercial">Commercial</option>
+                            <option id="corporate" value="corporate">Corporate</option>
+                            <option id="hybrid" value="hybrid">Hybrid</option>
+                        </select>
+
+                        <!-- RESIDENTIAL -->
+                        <div id="number-of-apartments">
+                            <label for="residential">N. of Appartements</label>
+                            <input type="number" >
+                        </div>
+
+                        <div id="number-of-floors">
+                            <label for="residential">N. of Floors</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-basements">
+                            <label for="residential">N. of basements</label>
+                            <input type="number">
+                        </div>
+                        <!-- /RESIDENTIAL -->
+
+                        <!-- COMMERCIAL -->
+                        <div id="number-of-floors">
+                            <label for="commercial">N. of Floors</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-basements">
+                            <label for="commercial">N. of Basements</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-companies">
+                            <label for="commercial">N. of Companies</label>
+                            <input type="number" >
+                        </div>
+
+                        <div id="number-of-parking-spots">
+                            <label for="commercial">N. of Parking Spots</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-elevators">
+                            <label for="commercial">N. of elevators</label>
+                            <input type="number">
+                        </div>
+                        <!-- /COMMERCIAL -->
+
+                        <!-- CORPORATE -->
+                        <div id="number-of-floors">
+                            <label for="corporate">N. of Floors</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-basements">
+                            <label for="corporate">N. of Basements</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-parking-spots">
+                            <label for="corporate">N. of Parking Spots</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-corporations">
+                            <label for="corporate">N. of corporations</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="maximum-occupancy">
+                            <label for="corporate">Maximum Occupancy</label>
+                            <input type="number">
+                        </div>
+                        <!-- /CORPORATE -->
+
+                        <!-- HYBRID -->
+                        <div id="number-of-floors">
+                            <label for="hybrid">N. of Floors</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-basements">
+                            <label for="hybrid">N. of Basements</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="number-of-companies">
+                            <label for="hybrid">N. of Companies</label>
+                            <input type="number" >
+                        </div>
+
+                        <div id="number-of-parking-spots">
+                            <label for="hybrid">N. of Parking Spots</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="maximum-occupancy">
+                            <label for="corporate">Maximum Occupancy</label>
+                            <input type="number">
+                        </div>
+
+                        <div id="business-hours">
+                            <label for="hybrid">Business Hours</label>
+                            <input type="number">
+                        </div>
+                        <!-- /HYBRID -->
+
+                    </form>
+                    <!-- /FORM -->
+
+                </div>
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer id="footer">
+                <div class="container">
+
+                    <div class="row">
+
+                        <!-- col #1 -->
+                        <div class="col-md-8">
+
+                            <h3 class="letter-spacing-1">WHY US?</h3>
+
+                            <!-- Small Description -->
+                            <p>
+                                We have the conviction that we create the most innovative and reliable products on the market. 
+                                Contact us today for any questions you might have.
+                            </p>
+                            <h2>(418) 555-1234</h2>
+                        </div>
+                        <!-- /col #1 -->
+
+                        <!-- col #2 -->
+                        <div class="col-md-4">
+                            <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+                            <!-- Newsletter Form -->
+                            <p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+                            <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-light" type="submit">Subscribe</button>
+                                    </span>
+                                </div>
+                            </form>
+                            <!-- /Newsletter Form -->
+
+                        </div>
+                        <!-- /col #2 -->
+
+                    </div>
+
+
+                </div>
+
+                <div class="copyright">
+                    <div class="container">
+                        <ul class="float-right m-0 list-inline mobile-block">
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li>&bull;</li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                        &copy; All Rights Reserved, Rocket Elevators Company
+                    </div>
+                </div>
+
+            </footer>
+            <!-- /FOOTER -->
+        
+        </div>
+         <!-- /wrapper -->
+
+        <!-- SCROLL TO TOP -->
+        <a href="#" id="toTop"></a>
+
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div class="inner">
+                <span class="loader"></span>
+            </div>
+        </div><!-- /PRELOADER -->
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script>var plugin_path = 'assets/plugins/';</script>
+        <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
