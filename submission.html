@@ -23,6 +23,9 @@
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		
+		<!-- PAGE CSS -->
+		<link href="assets/css/pages/submission.css" rel="stylesheet" type="text/css" />
     </head>
     <body class="smoothscroll enable-animation">
 
@@ -116,211 +119,254 @@
 					</div>
 				</header>
             </div>
-		    <!-- /Top Nav -->
-
-
-            <!-- PAGE HEADER -->
-            <section class="page-header">
-                <div class="container">
-
-                    <h1>SUBMISSION REQUEST</h1>
-
-                    <!-- breadcrumbs -->
-                    <!-- <ol class="breadcrumb">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li class="active">Services</li>
-                    </ol> -->
-                    <!-- /breadcrumbs -->
-
-                </div>
-            </section>
-            <!-- /PAGE HEADER -->
-
-            <section>
-                <div class="container">
-                    <!-- FORM -->
-                    <form method="POST" action="">
-                        <select name="service" id="building-type">
-                            <option value="None">Select a Building Type</option>
-                            <option id="residential" value="residential">Residential</option>
-                            <option id="commercial" value="commercial">Commercial</option>
-                            <option id="corporate" value="corporate">Corporate</option>
-                            <option id="hybrid" value="hybrid">Hybrid</option>
-                        </select>
-
-                        <!-- RESIDENTIAL -->
-                        <div id="number-of-apartments">
-                            <label for="residential">N. of Appartements</label>
-                            <input type="number" >
-                        </div>
-
-                        <div id="number-of-floors">
-                            <label for="residential">N. of Floors</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-basements">
-                            <label for="residential">N. of basements</label>
-                            <input type="number">
-                        </div>
-                        <!-- /RESIDENTIAL -->
-
-                        <!-- COMMERCIAL -->
-                        <div id="number-of-floors">
-                            <label for="commercial">N. of Floors</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-basements">
-                            <label for="commercial">N. of Basements</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-companies">
-                            <label for="commercial">N. of Companies</label>
-                            <input type="number" >
-                        </div>
-
-                        <div id="number-of-parking-spots">
-                            <label for="commercial">N. of Parking Spots</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-elevators">
-                            <label for="commercial">N. of elevators</label>
-                            <input type="number">
-                        </div>
-                        <!-- /COMMERCIAL -->
-
-                        <!-- CORPORATE -->
-                        <div id="number-of-floors">
-                            <label for="corporate">N. of Floors</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-basements">
-                            <label for="corporate">N. of Basements</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-parking-spots">
-                            <label for="corporate">N. of Parking Spots</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-corporations">
-                            <label for="corporate">N. of corporations</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="maximum-occupancy">
-                            <label for="corporate">Maximum Occupancy</label>
-                            <input type="number">
-                        </div>
-                        <!-- /CORPORATE -->
-
-                        <!-- HYBRID -->
-                        <div id="number-of-floors">
-                            <label for="hybrid">N. of Floors</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-basements">
-                            <label for="hybrid">N. of Basements</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="number-of-companies">
-                            <label for="hybrid">N. of Companies</label>
-                            <input type="number" >
-                        </div>
-
-                        <div id="number-of-parking-spots">
-                            <label for="hybrid">N. of Parking Spots</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="maximum-occupancy">
-                            <label for="corporate">Maximum Occupancy</label>
-                            <input type="number">
-                        </div>
-
-                        <div id="business-hours">
-                            <label for="hybrid">Business Hours</label>
-                            <input type="number">
-                        </div>
-                        <!-- /HYBRID -->
-
-                    </form>
-                    <!-- /FORM -->
-
-                </div>
-            </section>
-
-
-            <!-- FOOTER -->
-            <footer id="footer">
-                <div class="container">
-
-                    <div class="row">
-
-                        <!-- col #1 -->
-                        <div class="col-md-8">
-
-                            <h3 class="letter-spacing-1">WHY US?</h3>
-
-                            <!-- Small Description -->
-                            <p>
-                                We have the conviction that we create the most innovative and reliable products on the market. 
-                                Contact us today for any questions you might have.
-                            </p>
-                            <h2>(418) 555-1234</h2>
-                        </div>
-                        <!-- /col #1 -->
-
-                        <!-- col #2 -->
-                        <div class="col-md-4">
-                            <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
-
-                            <!-- Newsletter Form -->
-                            <p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-                            <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-                                <div class="input-group">
-                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                    <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-light" type="submit">Subscribe</button>
-                                    </span>
-                                </div>
-                            </form>
-                            <!-- /Newsletter Form -->
-
-                        </div>
-                        <!-- /col #2 -->
-
-                    </div>
-
-
-                </div>
-
-                <div class="copyright">
-                    <div class="container">
-                        <ul class="float-right m-0 list-inline mobile-block">
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li>&bull;</li>
-                            <li><a href="#">Privacy</a></li>
-                        </ul>
-                        &copy; All Rights Reserved, Rocket Elevators Company
-                    </div>
-                </div>
-
-            </footer>
-            <!-- /FOOTER -->
-        
         </div>
-         <!-- /wrapper -->
+		<!-- /Top Nav -->
+
+        <!-- PAGE HEADER -->
+        <section class="page-header">
+            <div class="container">
+
+                <h1>SUBMISSION REQUEST</h1>
+
+                <!-- breadcrumbs -->
+                <!-- <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li class="active">Services</li>
+                </ol> -->
+                <!-- /breadcrumbs -->
+
+            </div>
+        </section>
+        <!-- /PAGE HEADER -->
+
+
+        <!-- BODY -->
+
+        <div id="wrapper">
+
+            <div class="container justify-content-center align-items-center">
+                <!-- FORM -->
+
+                <div class="row">
+                    <div class="col-10">
+                        <div class="fancy-form fancy-form-select">
+                            <label for="building-type">Building Type</label>
+                            <select id="building-type">
+                                <option value="">Select a Building Type</option>
+                                <option id="residential" value="residential">Residential</option>
+                                <option id= "commercial" value="commercial">Commercial</option>
+                                <option id="corporate" value="corporate">Corporate</option>
+                                <option id="hybrid" value="hybrid">Hybrid</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-8">
+                        <div class="row">
+
+                            <div class="col">
+                                <!-- RESIDENTIAL -->
+                                <div id="fields-residential" class="building_type"  >
+                                    <div id="number-of-apartments">
+                                        <label for="nb-apartments-input-res">N. of Appartements</label>
+                                        <input id="nb-apartments-input-res" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-floors">
+                                        <label for="nb-floors-input-res">N. of Floors</label>
+                                        <input id="nb-floors-input-res" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-basements">
+                                        <label for="nb-basements-input-res">N. of basements</label>
+                                        <input id="nb-basements-input-res" type="number" value="0" min="0">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /RESIDENTIAL -->
+
+                            <div class="col">
+                                <!-- COMMERCIAL -->
+                                <div id="fields-commercial" class="building_type" >
+                                    <div id="number-of-floors">
+                                        <label for="nb-floors-input-com">N. of Floors</label>
+                                        <input id="nb-floors-input-com" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-basements">
+                                        <label for="nb-basements-input-com">N. of Basements</label>
+                                        <input id="nb-basements-input-com" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-companies">
+                                        <label for="nb-companies-input-com">N. of Companies</label>
+                                        <input id="nb-companies-input-com" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-parking-spots">
+                                        <label for="nb-parking-input-com">N. of Parking Spots</label>
+                                        <input id="nb-parking-input-com" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-elevators">
+                                        <label for="nb-elevators-input-com">N. of elevators</label>
+                                        <input id="nb-elevators-input-com" type="number" value="0" min="0">
+                                    </div>
+                                </div>
+                                <!-- /COMMERCIAL -->
+                            </div>
+
+                            <div class="col">
+                                <!-- CORPORATE -->
+                                <div id="fields-corporate" class="building_type" >
+                                    <div id="number-of-floors">
+                                        <label for="nb-floors-input-cor">N. of Floors</label>
+                                        <input id="nb-floors-input-cor" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-basements">
+                                        <label for="nb-basements-input-cor">N. of Basements</label>
+                                        <input id="nb-basements-input-cor" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-parking-spots">
+                                        <label for="nb-parking-input-cor">N. of Parking Spots</label>
+                                        <input id="nb-parking-input-cor" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-corporations">
+                                        <label for="nb-corporations-input-cor">N. of corporations</label>
+                                        <input id="nb-corporations-input-cor" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="maximum-occupancy">
+                                        <label for="max-occupancy-input-cor">Maximum Occupancy</label>
+                                        <input id="max-occupancy-input-cor" type="number" value="0" min="0">
+                                    </div>
+                                </div>
+                                <!-- /CORPORATE -->
+                            </div>
+
+                            <div class="col">
+                                <!-- HYBRID -->
+                                <div id="fields-hybrid" class="building_type" >
+                                    <div id="number-of-floors">
+                                        <label for="nb-floors-input-hyb">N. of Floors</label>
+                                        <input id="nb-floors-input-hyb" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-basements">
+                                        <label for="nb-basements-input-hyb">N. of Basements</label>
+                                        <input id="nb-basements-input-hyb" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="number-of-companies">
+                                        <label for="nb-companies-input-hyb">N. of Companies</label>
+                                        <input id="nb-companies-input-hyb" type="number" value="0" min="0" >
+                                    </div>
+
+                                    <div id="number-of-parking-spots">
+                                        <label for="nb-parking-input-hyb">N. of Parking Spots</label>
+                                        <input id="nb-parking-input-hyb" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="maximum-occupancy">
+                                        <label for="max-occupancy-input-hyb">Maximum Occupancy</label>
+                                        <input id="max-occupancy-input-hyb" type="number" value="0" min="0">
+                                    </div>
+
+                                    <div id="business-hours">
+                                        <label for="business-hours-input-hyb">Business Hours</label>
+                                        <input id="business-hours-input-hyb" type="number" value="0" min="0" max="24">
+                                    </div>
+                                </div>
+                                <!-- /HYBRID -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        N. of elevators 
+                                    </td>
+                                    <td>
+                                        <span id="elevator-estimation"></span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /BODY -->
+
+
+        <!-- FOOTER -->
+        <footer id="footer">
+            <div class="container">
+
+                <div class="row">
+
+                    <!-- col #1 -->
+                    <div class="col-md-8">
+
+                        <h3 class="letter-spacing-1">WHY US?</h3>
+
+                        <!-- Small Description -->
+                        <p>
+                            We have the conviction that we create the most innovative and reliable products on the market. 
+                            Contact us today for any questions you might have.
+                        </p>
+                        <h2>(418) 555-1234</h2>
+                    </div>
+                    <!-- /col #1 -->
+
+                    <!-- col #2 -->
+                    <div class="col-md-4">
+                        <h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+                        <!-- Newsletter Form -->
+                        <p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+                        <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-light" type="submit">Subscribe</button>
+                                </span>
+                            </div>
+                        </form>
+                        <!-- /Newsletter Form -->
+
+                    </div>
+                    <!-- /col #2 -->
+
+                </div>
+
+
+            </div>
+
+            <div class="copyright">
+                <div class="container">
+                    <ul class="float-right m-0 list-inline mobile-block">
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li>&bull;</li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                    &copy; All Rights Reserved, Rocket Elevators Company
+                </div>
+            </div>
+
+        </footer>
+        <!-- /FOOTER -->
 
         <!-- SCROLL TO TOP -->
         <a href="#" id="toTop"></a>
@@ -338,5 +384,6 @@
         <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 
         <script src="assets/js/scripts.js"></script>
+        <script src="assets/js/submission.js"></script>
     </body>
 </html>
