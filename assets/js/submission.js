@@ -48,9 +48,13 @@ function getResidentialElevatorsEstimate() {
     
     var nb_basement = values[2];
 
-    var average_apt = nb_apt/nb_floors ;
+    var average_apt = nb_apt/(nb_floors-nb_basement) ;
 
     var nb_elevators = average_apt/6;
+
+    if (nb_floors == 0) {
+        nb_elevators = 0;
+    }
 
     if (nb_apt > 20) {
         return Math.ceil(nb_elevators*2);
@@ -78,7 +82,7 @@ function getCommercialElevatorsEstimate() {
 
     var nb_elevators = values[4];
 
-    return nb_elevators;
+    return Math.ceil(nb_elevators);
 
 }
 
@@ -100,11 +104,21 @@ function getCorporateElevatorsEstimate() {
 
     var max_occupancy = values[4];
 
-    var total_occupant = max_occupancy*nb_floors;
+    var total_occupant = max_occupancy*(nb_floors+nb_basement);
 
     var nb_elevators = total_occupant / 1000;
 
-    return Math.random();
+    var nb_elevator_columns = (nb_floors+nb_basement)/20;
+
+    var average_elevator_column = nb_elevators/nb_elevator_columns;
+
+    nb_elevators_total = average_elevator_column*nb_elevator_columns
+    
+    if (nb_floors+nb_basement == 0) {
+        nb_elevators_total = 0;
+    }
+
+    return Math.ceil(nb_elevators_total);
 
 }
 
@@ -129,6 +143,20 @@ function getHybridElevatorsEstimate() {
 
     var business_hours = values[5];
 
-    return Math.random();
+    var total_occupant = max_occupancy*(nb_floors+nb_basement);
+
+    var nb_elevators = total_occupant / 1000;
+
+    var nb_elevator_columns = (nb_floors+nb_basement)/20;
+
+    var average_elevator_column = nb_elevators/nb_elevator_columns;
+
+    nb_elevators_total = average_elevator_column*nb_elevator_columns;
+    
+    if (nb_floors+nb_basement == 0) {
+        nb_elevators_total = 0;
+    }
+
+    return Math.ceil(nb_elevators_total);
 
 }
