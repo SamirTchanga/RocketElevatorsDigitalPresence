@@ -14,18 +14,18 @@
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
 
 		<!-- CORE CSS -->
-		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="asset/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 		
 		<!-- THEME CSS -->
-		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="asset/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="asset/css/layout.css" rel="stylesheet" type="text/css" />
 
 		<!-- PAGE LEVEL SCRIPTS -->
-		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		<link href="asset/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="asset/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
 		
 		<!-- PAGE CSS -->
-		<link href="assets/css/pages/submission.css" rel="stylesheet" type="text/css" />
+		<link href="asset/css/pages/submission.css" rel="stylesheet" type="text/css" />
     </head>
     <body class="smoothscroll enable-animation">
 
@@ -76,7 +76,7 @@
 
 						<!-- Logo -->
 						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets/images/_rockets/logo.png" alt="" />
+							<img src="asset/images/_rockets/logo.png" alt="" />
 						</a>
 						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 							<nav class="nav-main">
@@ -127,15 +127,6 @@
             <div class="container">
 
                 <h1>SUBMISSION REQUEST</h1>
-
-                <!-- breadcrumbs -->
-                <!-- <ol class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li class="active">Services</li>
-                </ol> -->
-                <!-- /breadcrumbs -->
-
             </div>
         </section>
         <!-- /PAGE HEADER -->
@@ -150,6 +141,7 @@
 
                 <div class="row">
                     <div class="col-10">
+                        <h1>First Step: Choose the type of building</h1>
                         <div class="fancy-form fancy-form-select">
                             <label for="building-type">Building Type</label>
                             <select id="building-type">
@@ -296,13 +288,56 @@
                                         N. of elevators 
                                     </td>
                                     <td>
-                                        <span id="elevator-estimation"></span>
+                                        <span id="elevator-amount"></span>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
+                <!--FORM-->
+                <div class="row">
+                    <h1>Second Step: Choose the service quality</h1>
+                    <!--QUALITY-->
+                    <div class="col-6">
+                        <div id="quality-input">
+                            <div id="standard">
+                                <input name="qualitySelected" value="standard" type="radio" id="standardquality" onclick="getServicePrice()";> Standard
+                            </div>
+        
+                            <div id="premium">
+                                <input name="qualitySelected" value="premium" type="radio" id="premiumquality" onclick="getServicePrice()";> Premium
+                            </div>
+        
+                            <div id="excelium">
+                                <input name="qualitySelected" value="excelium" type="radio" id="exceliumquality" onclick="getServicePrice()";> Excelium
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div id="elevator-unit-price">
+                        </div>
+                    </div>
+                  <!--/QUALITY-->
+                </div>
+                <br>
+                <!--RESULTS-->
+                <div class="row">
+                    <div id="elevator-total-price">
+                        <label for="elevator-total-input">Elevator Cost</label>
+                        <input id="elevator-total-input" type="number" readonly>
+                    </div>
+                    <div id="installation-fees">
+                       <label for="installation-fees-input">Installation Cost</label>
+                       <input id="installation-fees-input" type="number" readonly>
+                    </div>
+                    <div id="final-price">
+                        <label for="final-price-input">Total Cost</label>
+                        <input id="final-price-input" type="number" readonly>
+                    </div>
+                </div>
+                <br>
+                <!--/RESULTS-->
             </div>
         </div>
         <!-- /BODY -->
@@ -380,10 +415,10 @@
 
 
         <!-- JAVASCRIPT FILES -->
-        <script>var plugin_path = 'assets/plugins/';</script>
-        <script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+        <script>var plugin_path = 'asset/plugins/';</script>
+        <script src="asset/plugins/jquery/jquery-3.3.1.min.js"></script>
 
-        <script src="assets/js/scripts.js"></script>
-        <script src="assets/js/submission.js"></script>
+        <script src="asset/js/scripts.js"></script>
+        <script src="asset/js/submission.js"></script>
     </body>
 </html>
